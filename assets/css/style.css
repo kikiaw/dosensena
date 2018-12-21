@@ -1,0 +1,357 @@
+body{
+    background-color: #e2dbdb;
+    position: relative;
+}
+#login{
+    background-image: url(../img/logo/luis-llerena-14739.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.clear{
+    clear: both;
+}
+#bg-top{
+    background-color: #03adad;
+    width: 100%;
+    height: 70px;
+}
+#sub-bg-top{
+    background-color: #ff8000;
+    width: 100%;
+    height: 10px;
+}
+
+#header{
+    margin-top: -65px;
+    background-color: white;
+    height: 125px;
+    top: 2px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    position: sticky;
+    z-index: 10;
+}
+#header #header-top{
+    display: flex;
+    justify-content: space-around;
+}
+#logo img{
+    width: 150px;
+    margin-top: 10px;
+}
+#header form{
+    margin-top: 15px;
+    display: inline-block;
+}
+#header form #tombolCari{
+    cursor: pointer;
+}
+#header form #kolomCari{
+    width: 400px;
+}
+#header #menuLogin{
+    margin-top: 23px;
+    font-weight: bold;
+}
+#header #navMenu{
+    padding: 20px;
+}
+@media screen and (max-width:768px){
+  #logo img{
+      width: 125px;
+  }
+  #header form #kolomCari{
+      width: 200px;
+  }
+  #header #navMenu{
+      padding: 10px;
+  }
+  #header form #tombolCari{
+      display: none;
+  }
+}
+
+
+#asideLeft, #main, #asideRight{
+    float: left;
+    padding: 5px;
+    margin: 6px;
+    border-radius: 10px;
+    position: relative;
+    top: -60px;
+}
+#asideLeft{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: #03adad;
+    color: white;
+    position: sticky;
+    margin-top: 15px;
+    top: 140px;
+}
+#asideRight{
+    width: 30%;
+    background-color: #e2dbdb;
+    color: black;
+    position: sticky;
+    margin-top: 15px;
+    top: 140px;
+}
+#main{
+    width: 36%;
+    background-color: white;
+    color: black;
+    margin-top: 75px;
+}
+@media screen and (max-width:768px){
+  #asideLeft, #asideRight, #main{
+    top: 0;
+  }
+  #asideRight{
+    width: 100%;
+    position: sticky;
+    margin-top: 10px;
+  }
+  #asideLeft{
+    width: 100%;
+    position: sticky;
+    margin-top: 10px;
+  }
+  #main{
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+#asideLeft small a{
+    color: white;
+    display: inline-block;
+    float: right;
+}
+#asideLeft .viral{
+    display: flex;
+}
+#asideLeft .bullet, #asideLeft .judul{
+    float: left;
+    margin-left: 5px;
+}
+#asideLeft .bullet{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #ff8000;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 5px;
+}
+#asideLeft .judul{
+    height: auto;
+    position: relative;
+    top: -3px;
+}
+#asideLeft a{
+    color: white;
+}
+#asideLeft small{
+    color: white;
+}
+
+#asideRight{
+    display: flex;
+    flex-direction: column;
+}
+#asideRight .topikPilihan{
+    display: flex;
+}
+#asideRight a{
+    color: black;
+}
+#asideRight .bullet{
+    width: 25px;
+    height: 25px;
+    background-color: #ff8000;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 5px;
+}
+#asideRight .judul{
+    position: relative;
+    top: -10px;
+    margin-top: 10px;
+    padding: 4px;
+}
+
+.postHeader{
+    margin-bottom: 5px;
+}
+.postHeader img, .comment img{
+    width: 40px;
+    float: left;
+    margin-right: 7px;
+}
+.postHeader span{
+    display: inline-block;
+}
+.postContent .subPostContent{
+    height: 150px;
+    overflow: hidden;
+}
+.postContent h4 a{
+    color: black;
+}
+.content .postCategory a{
+    color: white;
+}
+#main .content{
+    padding: 7px 0;
+}
+.content .postCategory{
+    background-color: #ff8000;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 75px;
+    padding: 1px 3px;
+    border-radius: 20px;
+    margin-bottom: 13px;
+}
+
+#container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#inner-container{
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 20px;
+    flex-basis: 700px;
+}
+#login #loginHeader{
+    text-align: center;
+}
+#login #loginHeader img{
+    width: 275px;
+}
+#login #loginHeader h3{
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+#buttonLogin{
+    color: white;
+    background-color: #03adad;
+}
+#buttonSignUp{
+    color: white;
+    background-color: #ff8000;
+}
+#buttonSignUpLogin h4{
+    text-align: center;
+    margin-top: 70px;
+}
+#main h4#judulAtas a{
+    color: black;
+}
+#main h4#judulAtas{
+    border-bottom: 2px solid #03adad;
+    padding-bottom: 10px;
+}
+#main h3{
+    border-top: 3px solid #03adad;
+    padding: 20px;
+}
+.comment{
+    margin: 20px 0;
+}
+.comment p{
+    margin-top: 10px;
+}
+#main .category{
+    height: 150px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+#main .category h3{
+    border-top: 0 solid white;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -150px;
+    left: 50px;
+}
+.category h3 a{
+    color: white;
+}
+#main .category img{
+    opacity: 0.95;
+    border-radius: 20px;
+}
+#main .profil{
+    margin: 20px 0;
+}
+#main .profil h3{
+    border-top: 0 solid white;
+    margin: 20px 0;
+    padding: 0;
+}
+#main .profil img{
+    border: 1px solid #03adad;
+    width: 75px;
+}
+#main .profil button{
+    width: 100px;
+    background-color: #03adad;
+    color: white;
+}
+#main #profilMenu{
+    margin: 30px 0;
+}
+#main #profilMenu a{
+    color: #03adad;
+    font-weight: bold;
+}
+.error-login{
+    background-color: red;
+    color: white;
+    text-align: center;
+    width: 375px;
+    margin: -25px auto 15px auto;
+    padding: 7px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.error-news{
+    background-color: red;
+    color: white;
+    text-align: center;
+    width: 300px;
+    margin: -15px auto 15px auto;
+    padding: 7px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#main .form-news{
+    display: inline-block;
+    margin: 7px 0;
+}
+#main #judul-form-news{
+    margin-top: -15px;
+    border-top: 0px solid black;
+}
+form.inline-form{
+    display: inline;
+}
+.profil img#profil{
+    width: 150px;
+    box-shadow: 0 0 5px #03adad;
+    border: 0;
+}
+#header, #asideLeft, footer, #main, #login .container #inner-container{
+    box-shadow: 0 0 1px black, 0 0 5px white;
+}
